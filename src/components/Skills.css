@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.skills-outer h1{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.skills-outer{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.Technologies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+
+.Tech-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+.Tech-box:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+.Technologies img{
+    padding: 3%;
+    height: 80px;
+}
+
+.Technologies h2{
+    font-family: 'Orbitron', sans-serif;
+    color: white;                                                                                                                                                                              
+}
+
+.Tech-box.Other-tech img{
+    height: 50px; 
+    width: auto; 
+}
+
+.Tech-box img:hover{
+    height: 100px;
+    transition: height 0.4s ease;
+}

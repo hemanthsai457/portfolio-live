@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');                                                                                                                                                                                                                                                                                                                                                                                         
+
+.proj-outer{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.proj-outer h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.proj-main-1, .proj-main-2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.proj-inner {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 10px; 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255);
+    padding: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    color: black;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+
+.proj-inner img{
+    height: 250px;
+    width: 350px;
+}
+
+.proj-inner:hover{
+    transform: scale(1.05);
+}
+
+.proj-inner p{
+    text-align: left;
+    width: 100%;
+}
+
+.proj-inner button{
+    margin: 0 40px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.proj-inner button:hover{
+    background-color: black;
+    transition: background-color 0.4s ease;
+}
