@@ -34,7 +34,7 @@ const Projects = () => {
             <div className='proj-main-2'>
                 <div className='proj-inner'>
                     <h2><img src={portfolio} alt='Portfolio'/>My Portfolio</h2>
-                    <p>Hi</p>
+                    <p>I crafted a dynamic web portfolio using React.js, featuring interactive components like a navbar, project showcase, skills section, and work experience display. Employing CSS hover effects and transitions, I ensured a polished user experience. Additionally, I integrated APIs for the contact page, enabling visitors to input their details directly on the site. These details are securely forwarded to my personal email, facilitating seamless communication. My portfolio highlights expertise in frontend development, API integration, and user-centric design, showcasing both technical proficiency and effective communication channels.</p>
                     <br></br>
                     <a href='https://github.com/hemanthsai457/portfolio-git' target="_blank" rel="noopener noreferrer"><button className='view-but' type='button'>View</button></a>
                 </div>
