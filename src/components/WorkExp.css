@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');                                                                                                                                                                                                                                                                                                                                                                                         
+
+.workexp-outer{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/work_exp_bg.gif');
+    background-position: center;
+    background-size: 1000px 800px;
+    background-repeat: no-repeat;
+}
+
+.workexp-outer h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.workexp-desc img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.workexp-desc ol{
+    padding-left: 10px;
+    color: black;
+    text-align: left;
+}
+
+.workexp-desc h3{
+    color: black;
+}
+
+.workexp-desc .vertical-timeline-element-date {
+    margin: 0;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.timeline-title{
+    font-size:1.5em;
+    font-weight: bold;
+}

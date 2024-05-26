@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');                                                                                                                                                                                                                                                                                                                                                                                         
+
+.contactme-outer{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/contact/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactme-outer h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.inp-data{
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    align-content: center;
+}
+
+.inp-data input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 70px;
+}
+
+.inp-data textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.inp-data .sub:hover{
+    background-color:green;
+    color: white;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.contactme-outer img{
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.contactme-outer label{
+    margin-top: 50px;
+    margin-right: 10px;
+}
