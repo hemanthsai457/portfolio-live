@@ -37,7 +37,7 @@ const Contactme = () => {
     return (
         <div id="contact" className='contactme-outer'>
             <h1>Contact Me!</h1>
-            <p>I'd love if you reached out to me. Even if it's just tap say Hi. Don't hesitate! Drop me a message and i will get back to you ASAP!</p>
+            <p>I'd love if you reached out to me. Even if it's just tp say Hi. Don't hesitate! Drop me a message and i will get back to you ASAP!</p>
             <p>Write a message 👇</p>
             <div className='inp-data'>
             <form ref={form} onSubmit={sendEmail}>
@@ -51,12 +51,12 @@ const Contactme = () => {
                 <textarea name="message" />
                 <input type="submit" className="sub" value="Send" />
                 </form>
-                <label>
+                {/* <label>
                     <img src={phone} alt='phone'></img>5622542792
-                </label>
-                <label>
+                </label> */}
+                {/* <label>
                     <img src={gmail} alt='gmail'></img>gokarakondahemanthsai@gmail.com
-                </label>
+                </label> */}
             </div>
         </div>
         

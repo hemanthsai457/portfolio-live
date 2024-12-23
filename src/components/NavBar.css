@@ -1,39 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-.NavBar{
+.NavBar {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(0 ,0 ,0);
+    background-color: rgba(0, 0, 0);
     display: flex;
-    justify-content: flex;
+    justify-content: space-between;
     padding: 12px;
-  }
-  
-  .Nav-link{
+    position: relative;
+}
+
+.Nav-link {
     padding: 10px;
     justify-content: right;
-    color:rgba(255 ,255 ,255 ,0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-  }
+}
 
-  .NavBar img{
+.NavBar img {
     height: 80px;
     width: auto;
-  }
+}
 
-  .logos{
-   margin-top: 1px;
-   margin-right: auto;
-  }
-  
-  .Nav-link:hover,.Nav-link.active{
+.logos {
+    margin-top: 1px;
+    margin-right: auto;
+}
+
+.Nav-link:hover,
+.Nav-link.active {
     color: white;
     transition: color 0.7s ease;
     font-size: 1.1em;
     transition: font-size 0.5s ease;
     font-weight: bold;
-  }
-  
-  .Nav-link:active{
-    color:white;
-  }
-  
+}
+
+.Nav-link:active {
+    color: white;
+}
+
+/* Default display for navigation links (desktop view) */
+.Nav-links {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+/* When mobile menu is active */
+.Nav-links.mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9); /* Optional, change background color */
+    padding: 10px;
+}
+
+.Nav-link {
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Hamburger menu */
+.Nav-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Nav-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .Nav-links {
+        display: none;
+    }
+
+    .Nav-toggle {
+        display: flex;
+    }
+
+    .Nav-links.mobile {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .Nav-link {
+        font-size: 0.9em;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .NavBar {
+        padding: 10px;
+    }
+
+    .NavBar img {
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .Nav-links.mobile {
+        width: 25%;
+        left: 10px;
+        right: 0;
+        margin: 10px;
+    }
+
+    .Nav-link {
+        font-size: 0.8em;
+        text-align: center;
+    }
+}

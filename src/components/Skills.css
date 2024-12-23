@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-.skills-outer h1{
+.skills-outer h1 {
     font-family: 'Orbitron', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 50px;
 }
 
-.skills-outer{
+.skills-outer {
     font-family: 'Poppins', sans-serif;
     color: black;
     display: flex;
@@ -17,36 +17,12 @@
     align-items: center;
 }
 
-
-.Technologies{
+.Technologies {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 5px;
     margin-top: 10px;
-}
-
-
-.Tech-box{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 1300px;
-    height: 300px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 40px;
-}
-
-.Tech-box:hover{
-    background-color: rgba(255, 255, 255, 0.6);
-    transition: background-color 0.3s ease;
-}
-
-.Technologies img{
-    padding: 3%;
-    height: 80px;
 }
 
 .Technologies h2{
@@ -54,12 +30,188 @@
     color: white;                                                                                                                                                                              
 }
 
-.Tech-box.Other-tech img{
-    height: 50px; 
-    width: auto; 
+.Tech-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.Tech-box img:hover{
-    height: 100px;
-    transition: height 0.4s ease;
+.Tech-box:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+.Tech-box img {
+    padding: 3%;
+    height: 60px;
+    transition: transform 0.3s ease, height 0.3s ease;
+    object-fit: contain;
+}
+
+.Tech-box h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.Tech-box.Other-tech img {
+    height: 50px;
+    width: auto;
+}
+
+.Tech-box img:hover {
+    height: 90px;
+    transform: scale(1.2);
+}
+
+/* Fullscreen layout - Images in row */
+@media (min-width: 768px) {
+    .Tech-box {
+        flex-direction: row; /* Images should be arranged in row on larger screens */
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .Tech-box img {
+        margin-right: 15px; /* Space between images */
+    }
+
+    .Technologies {
+        flex-direction: column; /* Ensure images are in row format */
+        gap: 10px;
+    }
+
+    /* Scrolling effect for large screens */
+    .scrolling-images {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: scrollTechs 10s linear infinite;
+    }
+}
+
+/* Mobile and Tablet view adjustments */
+@media (max-width: 768px) {
+    .skills-outer {
+        padding: 20px;
+    }
+
+    .skills-outer h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Technologies {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 5px;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .Tech-box {
+        width: 90%;
+        height: 400px;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Tech-box img {
+        height: 50px;
+        padding: 5%;
+    }
+
+    .Tech-box img:hover {
+        height: 60px;
+    }
+
+    .Tech-box h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    /* Scrolling effect for smaller screens */
+    .scrolling-images {
+        display: flex;
+        flex-direction: column; /* Stack images in column on smaller screens */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: scrollTechs 10s linear infinite;
+    }
+
+    @keyframes scrollTechs {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-100%); /* Scroll images upwards */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-outer h1 {
+        font-size: 28px;
+    }
+
+    .Technologies img {
+        height: 40px;
+    }
+
+    .Tech-box {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .Tech-box img {
+        height: 60px;
+    }
+
+    .Tech-box h2 {
+        font-size: 18px;
+    }
+
+    /* Ensure scrolling effect is applied on smaller screens */
+    .Tech-box {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Tech-box .scrolling-images {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: scrollTechs 10s linear infinite;
+        justify-content: flex-start;
+    }
+
+    @keyframes scrollTechs {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-100%); /* Scroll images upwards */
+        }
+    }
 }

@@ -110,4 +110,85 @@
     transform: translate(-650%, 650%) scale(0);
     transition: transform 2s ease, opacity 0.5s ease;
   }
-  
+
+/* my image is not being displayed properly pls have this issue resolved */
+
+  /* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-page {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .outerblock {
+    flex-direction: row; /* Keeps the inner blocks side-by-side */
+    align-items: center;
+    background-size: cover;
+  }
+
+  .innerblock {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .imgcntr {
+    width: auto;  /* Adjust width for responsiveness */
+    height: auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/img4.jpg'); /* Ensure this path is correct */
+  }
+
+  .innerblock h1 {
+    font-size: 30px;
+  }
+
+  .Animated-text {
+    font-size: 22px;
+  }
+
+  .innerblock .RB, .innerblock .CB {
+    width: 30%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .innerblock .RB:hover, .innerblock .CB:hover {
+    background-color: #333;
+  }
+
+  .shooting-star {
+    display: none;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+
+  .innerblock {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .innerblock h1 {
+    font-size: 26px;
+  }
+
+  .innerblock .RB, .innerblock .CB {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .Animated-text {
+    font-size: 20px;
+  }
+
+}

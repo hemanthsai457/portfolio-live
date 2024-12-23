@@ -1,5 +1,5 @@
 {
-  "homepage":"https://hemanthsai457.github.io/portfolio-live",
+  "homepage": "https://hemanthsai457.github.io/portfolio-live",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "react-vertical-timeline-component": "^3.6.0",
     "typewriter-effect": "^2.21.0",
@@ -23,8 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.2.0"
   }
 }

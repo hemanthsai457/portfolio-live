@@ -8,8 +8,11 @@
     flex-direction: column;
     background-image: url('../images/work_exp_bg.gif');
     background-position: center;
-    background-size: 1000px 800px;
+    background-size: cover; /* Ensures the background image covers the area */
     background-repeat: no-repeat;
+    width: 90%; /* Makes it responsive to the screen width */
+    height: auto; /* Adjusts the height to fit content */
+    padding: 20px; /* Add padding to make it more spacious */
 }
 
 .workexp-outer h1{
@@ -46,4 +49,37 @@
 .timeline-title{
     font-size:1.5em;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .workexp-outer h1{
+        font-size: 35px;
+    }
+
+    .workexp-desc img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .timeline-title{
+        font-size:1.5em;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .workexp-outer h1{
+        font-size: 27px;
+    }
+
+    .workexp-desc img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .timeline-title{
+        font-size:1.0em;
+    }
+
 }

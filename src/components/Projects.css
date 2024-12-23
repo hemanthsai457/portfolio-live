@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .proj-inner {
@@ -68,3 +69,42 @@
     background-color: black;
     transition: background-color 0.4s ease;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .proj-main-1, .proj-main-2 {
+      flex-direction: column; /* Stack cards vertically */
+      justify-content: flex-start; /* Align the items at the top */
+    }
+  
+    .proj-inner {
+      max-width: fit-content;
+      margin: 40px 40px; /* Adjust margin for better spacing */
+    }
+  
+    .proj-inner img {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .proj-outer h1 {
+      font-size: 27px; /* Adjust heading size for smaller screens */
+      margin-bottom: 30px;
+    }
+  
+    .proj-inner {
+        max-width: fit-content;
+        margin: 30px 30px;
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .proj-inner img {
+      height: 200px; /* Resize image for mobile view */
+    }
+  
+    .proj-inner button {
+      margin: 0 20px; /* Adjust button margin for mobile view */
+    }
+  }

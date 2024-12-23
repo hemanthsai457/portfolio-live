@@ -38,111 +38,119 @@ const Skills = () => {
         <div className="Technologies">
         <h2 className="skill-title">Programming Languages</h2>
             <div className="Tech-box prog-lang">
-                <figure>
-                    <img src={c} alt="C Language"/>
-                    <figcaption>C Language</figcaption>
-                </figure>
-                <figure>
-                    <img src={java} alt="Java"/>
-                    <figcaption>Java</figcaption>
-                </figure>
-                <figure>
-                    <img src={python} alt="Python"/>
-                    <figcaption>Python</figcaption>
-                </figure>
-                <figure>
+                <div className="scrolling-images">
+                    <figure>
+                        <img src={c} alt="C Language"/>
+                        <figcaption>C Language</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={java} alt="Java"/>
+                        <figcaption>Java</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={python} alt="Python"/>
+                        <figcaption>Python</figcaption>
+                    </figure>
+                    <figure>
                     <img src={javascript} alt="Javascript"/>
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-                <figure>
-                    <img src={oracle} alt="oracle"/>
-                    <figcaption>Oracle</figcaption>
-                </figure>
-                <figure>
-                    <img src={mysql} alt="mysql"/>
-                    <figcaption>MySQL</figcaption>
-                </figure>
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={oracle} alt="oracle"/>
+                        <figcaption>Oracle</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={mysql} alt="mysql"/>
+                        <figcaption>MySQL</figcaption>
+                    </figure>
+                </div>
             </div>
             <h2 className="skill-title">Web Technologies</h2>
             <div className="Tech-box web-techno">
-                <figure>
-                    <img src={HTML} alt="HTML"/>
-                    <figcaption>HTML</figcaption>
-                </figure>
-                <figure>
-                    <img src={CSS} alt="CSS"/>
-                    <figcaption>CSS</figcaption>
-                </figure>
-                <figure>
-                    <img src={node} alt="node.js"/>
-                    <figcaption>Node.js</figcaption>
-                </figure>
-                <figure>
-                    <img src={angular} alt="Angular"/>
-                    <figcaption>Angular</figcaption>
-                </figure>
-                <figure>
-                    <img src={react} alt="React"/>
-                    <figcaption>React</figcaption>
-                </figure>
-                <figure>
-                    <img src={api} alt="API"/>
-                    <figcaption>API</figcaption>
-                </figure>
+                <div className="scrolling-images">
+                    <figure>
+                        <img src={HTML} alt="HTML"/>
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={CSS} alt="CSS"/>
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={node} alt="node.js"/>
+                        <figcaption>Node.js</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={angular} alt="Angular"/>
+                        <figcaption>Angular</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={react} alt="React"/>
+                        <figcaption>React</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={api} alt="API"/>
+                        <figcaption>API</figcaption>
+                    </figure>
+                </div>
             </div>
             <h2 className="skill-title">Cloud Skills</h2>
             <div className="Tech-box Cloud">
-                <figure>
-                <img src={amazon} alt="Amazon"/>
-                <figcaption>Amazon Web Servies</figcaption>
-                </figure>
-                <figure>
-                <img src={azure} alt="Azure" />
-                <figcaption>Azure</figcaption>
-                </figure>
-                <figure>
-                <img src={gcp} alt="Google Cloud"/>
-                <figcaption>Google Cloud</figcaption>
-                </figure>
-                <figure>
-                <img src={docker} alt="Docker"/>
-                <figcaption>Docker</figcaption>
-                </figure>
+                <div className="scrolling-images">
+                    <figure>
+                        <img src={amazon} alt="Amazon"/>
+                        <figcaption>Amazon Web Servies</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={azure} alt="Azure" />
+                        <figcaption>Azure</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={gcp} alt="Google Cloud"/>
+                        <figcaption>Google Cloud</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={docker} alt="Docker"/>
+                        <figcaption>Docker</figcaption>
+                    </figure>
+                </div>
             </div>
             <h2 className="skill-title">Other Tools & Technologies</h2>
             <div className="Tech-box Other-tech">
-                <figure>
-                    <img src={eclipse} alt="Eclipse"/>
-                    <figcaption>Eclipse</figcaption>
-                </figure>
-                <figure>
-                    <img src={vscode} alt="VsCode"/>
-                    <figcaption>VsCode</figcaption>
-                </figure>
-                <figure>
-                    <img src={ai} alt="AI"/>
-                    <figcaption>Artificial Intelligence</figcaption>
-                </figure>
-                <figure>
-                    <img src={nlp} alt="NLP"/>
-                    <figcaption>Natural Language Processing</figcaption>
-                </figure>
-                <figure>
-                    <img src={jupyter} alt="Jupyter"/>
-                    <figcaption>Jupyter</figcaption>
-                </figure>
-                <figure>
-                    <img src={twilio} alt="Twilio"/>
-                    <figcaption>Twilio</figcaption>
-                </figure>
-                {/* <figure>
-                    <img src={npm} alt="Npm"/>
-                    <figcaption>Node Package Manager</figcaption>
-                </figure> */}
-                <figure>
-                    <img src={linux} alt="Linux"/>
-                    <figcaption>Linux</figcaption>
-                </figure>
+                <div className="scrolling-images">
+                    <figure>
+                        <img src={eclipse} alt="Eclipse"/>
+                        <figcaption>Eclipse</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={vscode} alt="VsCode"/>
+                        <figcaption>VsCode</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={ai} alt="AI"/>
+                        <figcaption>Artificial Intelligence</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={nlp} alt="NLP"/>
+                        <figcaption>Natural Language Processing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={jupyter} alt="Jupyter"/>
+                        <figcaption>Jupyter</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={twilio} alt="Twilio"/>
+                        <figcaption>Twilio</figcaption>
+                    </figure>
+                    {/* <figure>
+                        <img src={npm} alt="Npm"/>
+                        <figcaption>Node Package Manager</figcaption>
+                    </figure> */}
+                    <figure>
+                        <img src={linux} alt="Linux"/>
+                        <figcaption>Linux</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>

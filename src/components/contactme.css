@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 30px;
 }
 
 .contactme-outer h1{
@@ -21,7 +22,9 @@
 }
 
 .inp-data{
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
     padding: 10px;
     align-content: center;
@@ -56,6 +59,46 @@
 }
 
 .contactme-outer label{
-    margin-top: 50px;
+    margin-top: auto;
     margin-right: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contactme-outer h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .inp-data input, .inp-data textarea {
+        width: 93%; /* Adjust input width for smaller screens */
+        margin: 10px 0px; /* Center inputs */
+    }
+
+    .inp-data .sub {
+        width: 25%;
+    }
+
+    .inp-data {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactme-outer h1 {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+
+    .inp-data {
+        gap: 5px;
+    }
+
+    .inp-data textarea {
+        height: 120px; 
+    }
+
+    .inp-data .sub {
+        font-size: 14px; 
+    }
 }

@@ -33,3 +33,20 @@
 .ReturnToTop:hover {
     background-color: #555;
 }
+
+/* Hide footer text on smaller devices */
+@media (max-width: 768px) {
+    .footer-content p {
+        display: none; /* Hides the text for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content p {
+        display: none; /* Hides the text for smaller devices */
+    }
+
+    .ReturnToTop {
+        font-size: 10px;
+    }
+}

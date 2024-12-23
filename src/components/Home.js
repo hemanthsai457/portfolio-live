@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect'
 import React from 'react';
 import './Home.css';
-import resume from "../files/HemanthSai_Gokarakonda_AI.pdf";
+import resume from "../files/HemanthSai_Gokarakonda_Resume.pdf";
 
 const Home = () => { 
     const scrollToSection = (id) =>{
