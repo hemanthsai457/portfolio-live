@@ -4,7 +4,7 @@ import forest_fire from '../images/Projects/forest_fire_prediction.jpg';
 import inventory_analysis from '../images/Projects/inventory_management.jpg';
 import delidash from '../images/Projects/DeliDash.jpg';
 import heartpulse from '../images/Projects/heartpulse.jpg';
-import portfolio from '../images/Projects/portfolio.png';
+import library_app from '../images/Projects/Library_app.png';
 
 const Projects = () => {
     return (
@@ -33,10 +33,10 @@ const Projects = () => {
             </div>
             <div className='proj-main-2'>
                 <div className='proj-inner'>
-                    <h2><img src={portfolio} alt='Portfolio'/>My Portfolio</h2>
-                    <p>The Personal Portfolio is a responsive website built with React, HTML, CSS, and JavaScript to showcase my skills, projects, and achievements. It features a sleek, mobile-friendly design with interactive elements like a collapsible menu and a smooth-scroll button. Deployed and managed on Github, Github Pages, it highlights my expertise in web development, UI/UX design, project implementation and maintainance.</p>
+                    <h2><img src={library_app} alt='Library Management System'/>Library Management System</h2>
+                    <p>The Library Management System is a full-stack web application built using React, TypeScript, and Spring to streamline library operations. It features user and admin authentication, allowing users to browse, search, reserve, and review books with real-time inventory updates. The admin dashboard facilitates efficient management by enabling book inventory control, reservation approvals, and user query responses. With a responsive UI and seamless API integration, the system optimizes library workflows while enhancing the user experience.</p>
                     <br></br>
-                    <a href='https://github.com/hemanthsai457/portfolio-git' target="_blank" rel="noopener noreferrer"><button className='view-but' type='button'>View</button></a>
+                    <a href='https://github.com/hemanthsai457/Library-App' target="_blank" rel="noopener noreferrer"><button className='view-but' type='button'>View</button></a>
                 </div>
                 <div className='proj-inner'>
                     <h2><img src={delidash} alt='DeliDash'/>DeliDash</h2>
